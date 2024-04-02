@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/Async.io.svg",
-        href: "/Async.io.svg",
+        url: "asyncLight.svg",
+        href: "/async.io.svg",
       },
     ],
   },
