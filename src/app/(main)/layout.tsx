@@ -1,4 +1,5 @@
 import Sidebar from "@/components/sidebar";
+import InfoBar from "@/infobar";
 import React from "react";
 
 type Props = {
@@ -7,9 +8,12 @@ type Props = {
 
 const Layout = (props: Props) => {
   return (
-    <div className="flex overflow-hidden h-full">
+    <div className="flex h-full dark:bg-black overflow-hidden">
       <Sidebar />
-      <div className="w-full">{props.children}</div>
+      <div className="w-full h-screen">
+        <InfoBar />
+        {props.children}
+      </div>
     </div>
   );
 };

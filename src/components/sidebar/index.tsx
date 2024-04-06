@@ -30,8 +30,8 @@ const Sidebar = (props: Props) => {
     <nav className="h-screen w-28">
       <div className="flex flex-col h-full">
         {/* Brand Logo */}
-        <div className="w-full my-3 border-b flex justify-center items-center">
-          <div className="py-[1.4rem] text-xl w-10/12">
+        <div className="w-[90%] hidden mx-auto mt-3 border-b md:flex justify-center items-center">
+          <div className="py-1 text-xl w-10/12">
             <Link href={"/"}>
               <Image
                 className="dark:block hidden"
@@ -50,7 +50,7 @@ const Sidebar = (props: Props) => {
             </Link>
           </div>
         </div>
-        <div className="relative flex flex-col gap-8 items-center justify-around overflow-y-scroll py-6 px-2">
+        <div className="mt-7 md:mt-0 flex flex-col gap-8 items-center justify-between overflow-y-scroll py-6 px-2">
           <div className="flex flex-col item-center  gap-10 justify-start py-6 px-2">
             <TooltipProvider>
               {SidebarOptions.map((option) => (
@@ -85,7 +85,7 @@ const Sidebar = (props: Props) => {
               ))}
             </TooltipProvider>
           </div>
-          <Separator />
+          {/* <Separator /> */}
 
           <div className="flex items-center flex-col gap-1 dark:bg-[#353346]/30 p-2 rounded-full overflow-y border-[1px]">
             <div className="relative dark:border-t-[#353346]/70 p-2 rounded-full border-t-[2px] border-[1px] border-t-[#353346]">
@@ -114,8 +114,9 @@ const Sidebar = (props: Props) => {
               <Check size={18} />
             </div>
           </div>
-          <Separator />
-          <div className="flex items-center justify-center flex-col gap-8">
+          {/* <Separator /> */}
+
+          <div className="flex items-center justify-center my-5">
             <ThemeToggle />
           </div>
         </div>

@@ -13,15 +13,16 @@ const Navbar = (props: Props) => {
     <header className="fixed right-0 left-0 top-0 py-4 px-4 bg-black/40 backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900 justify-between">
       <aside className="flex items-center gap-[2px]">
         <Image
-          src="/AsyncioLight.svg"
+          src="/AsyncLight.svg"
           height={1}
           width={100}
           alt="Async.io"
           className="shadow-sm shrink-0 cursor-pointer dark:block hidden"
           onClick={() => router.push("/")}
         />
+        minimalist
         <Image
-          src="/AsyncioDark.svg"
+          src="/AsyncDark.svg"
           height={1}
           width={100}
           alt="Async.io"
