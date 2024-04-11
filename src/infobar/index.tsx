@@ -10,8 +10,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { ThemeToggle } from "@/components/global/themeToggle";
-// import { UserButton } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
+// import { ThemeToggle } from "@/components/global/themeToggle";
 // import { useBilling } from "@/providers/billing-provider";
 // import { onPaymentDetails } from "@/app/(main)/(pages)/billing/_actions/payment-connecetions";
 
@@ -33,7 +33,7 @@ const InfoBar = (props: Props) => {
   //   }, []);
 
   return (
-    <div className="flex flex-row justify-end gap-6 items-center px-4 py-2 w-full dark:bg-black ">
+    <div className="flex flex-row justify-end gap-6 items-center px-4 py-[0.62rem] w-full dark:bg-black ">
       <span className="flex items-center gap-2 font-bold">
         {/* Todo */}
         <p className="text-sm font-light text-gray-300">Credits</p>
@@ -73,7 +73,7 @@ const InfoBar = (props: Props) => {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-      {/* <UserButton /> */}
+      <UserButton />
     </div>
   );
 };
