@@ -58,7 +58,7 @@ const Settings = async (props: Props) => {
   });
 
   return (
-    <div className="flex flex-col gap-4 pb-16">
+    <div className="flex flex-col">
       <h1 className="md:text-4xl text-2xl sticky top-0 z-[100] p-6 bg-background/50 backdrop-blur-lg flex items-center border-b font-semibold">
         Settings
       </h1>

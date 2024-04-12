@@ -30,11 +30,8 @@ const ProfilePicture = ({ userImage, onDelete, onUpload }: Props) => {
           <>
             <div className="relative h-full w-2/12">
               <Image
-                src={userImage}
+                src={`${userImage}-/scale_crop/1000x750/center/-/border_radius/4p/`}
                 alt="User_Image"
-                className="rounded-xl"
-                // height={1}
-                // width={177}
                 fill
               />
             </div>
