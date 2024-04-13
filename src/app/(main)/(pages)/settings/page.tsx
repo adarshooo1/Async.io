@@ -58,11 +58,11 @@ const Settings = async (props: Props) => {
   });
 
   return (
-    <div className="flex flex-col">
-      <h1 className="md:text-4xl text-2xl sticky top-0 z-[100] p-6 bg-background/50 backdrop-blur-lg flex items-center border-b font-semibold">
+    <div className="flex flex-col h-full w-full">
+      <h1 className="md:text-4xl text-2xl top-0 z-20 p-6 bg-background/50 backdrop-blur-lg flex items-center border-b font-semibold">
         Settings
       </h1>
-      <div className="p-6">
+      <div className="p-6 overflow-y-scroll h-full pb-32">
         {/* Further Content */}
         <h2 className="text-2xl font-bold">User Profiles</h2>
         <p className="text-base dark:text-white/50">

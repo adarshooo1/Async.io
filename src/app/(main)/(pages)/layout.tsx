@@ -4,7 +4,7 @@ type Props = { children: React.ReactNode };
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="border-l-[1px] border-t-[1px] h-screen rounded-tl-3xl border-muted-foreground/20 overflow-y-scroll pb-20 dark:bg-neutral-950">
+    <div className="border-l-[1px] border-t-[1px] h-full w-full rounded-tl-3xl border-muted-foreground/20 overflow-hidden dark:bg-neutral-950">
       {children}
     </div>
   );

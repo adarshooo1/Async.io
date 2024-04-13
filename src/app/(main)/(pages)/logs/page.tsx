@@ -4,11 +4,13 @@ type Props = {};
 
 const Logs = (props: Props) => {
   return (
-    <div className="flex flex-col relative gap-4">
-      <h1 className="md:text-4xl text-2xl sticky top-0 z-[100] p-6 bg-background/50 backdrop-blur-lg flex items-center border-b font-semibold">
+    <div className="flex flex-col h-full w-full">
+      <h1 className="md:text-4xl text-2xl top-0 z-20 p-6 bg-background/50 backdrop-blur-lg flex items-center border-b font-semibold">
         Logs
       </h1>
-      <div className="p-6">{/* Further Content */}</div>
+      <div className="p-6 overflow-y-scroll h-full pb-32">
+        {/* Further Content */}
+      </div>
     </div>
   );
 };
