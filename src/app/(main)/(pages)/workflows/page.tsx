@@ -1,60 +1,30 @@
 import { DotCanvas } from "@/components/ui/dot-canvas";
 import React from "react";
+import WorkFlowButton from "./_components/workflow-button";
+import Workflows from "./_components";
 
 type Props = {};
 
-const Workflows = (props: Props) => {
+const page = (props: Props) => {
   return (
     <div className="flex flex-col h-full w-full">
-      <h1 className="md:text-4xl text-2xl top-0 z-20 p-6 bg-background/50 backdrop-blur-lg flex items-center border-b font-semibold">
+      <h1 className="md:text-4xl text-2xl top-0 z-20 p-6 bg-background/50 backdrop-blur-lg flex items-center justify-between border-b font-semibold">
         Workflows
+        <WorkFlowButton />
       </h1>
-      <DotCanvas>
-        <div className="overflow-y-scroll p-6 h-full pb-40">
-          {/* COntent */}
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja09876</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja123456</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja</h1>
-          <h1>dssandjsdnja678</h1>
-        </div>
-      </DotCanvas>
+      <div className="p-6 overflow-y-scroll h-full pb-20">
+        {/* Further Content */}
+        <Workflows />
+        <Workflows />
+        <Workflows />
+        <Workflows />
+        <Workflows />
+        <Workflows />
+        <Workflows />
+        <Workflows />
+      </div>
     </div>
   );
 };
 
-export default Workflows;
+export default page;

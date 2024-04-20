@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { ModelProvider } from "@/providers/model-provider";
 
 const inter = DM_Sans({ subsets: ["latin"] });
 
@@ -38,7 +39,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <ModelProvider>{children}</ModelProvider>
           </ThemeProvider>
         </body>
       </html>
